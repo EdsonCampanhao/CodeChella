@@ -1,0 +1,83 @@
+.sw-button,
+.sw-button .txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+.sw-button{
+     padding: 32px 24px;
+}
+.sw-button .txt {
+    text-align: center;
+    line-height: 40px;
+    color: var(--cinza);
+    font-size: 20px;
+}
+
+.sw-button h2 {
+    font-size: 32px;
+}
+
+.sw-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    width: 312px;
+    height: 56px;
+    background-color: var(--azul);
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px var(--cinza);
+}
+
+@media screen and (min-width:700px) {
+
+    .sw-button {
+        padding-left: 79px;
+        padding-right: 79px;
+    }
+
+    .sw-button img {
+        visibility: hidden;
+
+    }
+
+    .sw-button a img {
+        visibility: initial;
+    }
+
+    .sw-button .img {
+        background-image: url('./img/peopleT.png');
+        background-size: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media screen and (min-width:700px) {
+
+    .sw-button {
+        padding-left: 121px;
+        padding-right: 121px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sw-button .img {
+        background-image: url('./img/peopleD.png');
+        background-size: 100%;
+        width: 609px;
+        background-repeat: no-repeat;
+    }
+    .sw-button .txt {
+        width: 540px;
+    }
+
+}

@@ -1,0 +1,32 @@
+.hero-section {
+    width: 100vw;
+    height: 270px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero-img {
+    background-image: url('./Banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+@media screen and (min-width:700px) {
+    .hero-img{
+        background-image: url('./Banner\ \(1\).png');
+    }
+    
+}
+@media screen and (min-width:1440px) {
+    .hero-img{
+        background-image: url('./Banner\ \(2\).png');
+        width: 1440px;
+        border-radius: 0 0 50px 50px;
+    }
+    
+}
