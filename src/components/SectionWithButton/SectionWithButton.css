@@ -11,7 +11,6 @@
 .sw-button .txt {
     text-align: center;
     line-height: 40px;
-    color: var(--cinza);
     font-size: 20px;
 }
 
@@ -39,8 +38,7 @@
 @media screen and (min-width:700px) {
 
     .sw-button {
-        padding-left: 79px;
-        padding-right: 79px;
+       padding: 64px 78px;
     }
 
     .sw-button img {
@@ -53,10 +51,14 @@
     }
 
     .sw-button .img {
-        background-image: url('./img/peopleT.png');
+      
         background-size: 100%;
-        width: 100%;
+        width: 609px;
+        height: 381px;
+
         background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
     }
 
 }
@@ -71,7 +73,7 @@
     }
 
     .sw-button .img {
-        background-image: url('./img/peopleD.png');
+
         background-size: 100%;
         width: 609px;
         background-repeat: no-repeat;
@@ -79,5 +81,8 @@
     .sw-button .txt {
         width: 540px;
     }
-
+    .sw-button:nth-child(4){
+ 
+        flex-direction: row-reverse;
+      }
 }

@@ -5,10 +5,11 @@ import { BsInstagram } from 'react-icons/bs';
 import { BsWhatsapp } from 'react-icons/bs'
 import logo from './img/logo.png'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <section className='footer'>
-            <div className='img'>imagem ilustrativa</div>
+            {props.img && <div className='img' style={{backgroundImage: `url(${props.img})`}}>imagem ilustrativa</div>}
+            
 
             <div className='container'>
                 <img src={logo} />

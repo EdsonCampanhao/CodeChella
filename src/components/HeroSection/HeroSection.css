@@ -1,32 +1,56 @@
 .hero-section {
     width: 100vw;
-    height: 270px;
+    
     text-align: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    
 
 }
 
 .hero-img {
-    background-image: url('./Banner.png');
+     opacity: 0.5;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 100%;
-    background-size: 100%;
+    height: 270px;
+    background-size: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text  h1,.text p{
+    color: black;
+    font-size: 32px;
+    font-weight: 800;
+    
 }
 
 @media screen and (min-width:700px) {
     .hero-img{
-        background-image: url('./Banner\ \(1\).png');
+        height: 374px;
+      
+     }
+    .text  h1,.text p{
+
+        font-size: 64px;
+        font-weight: 800;
+        
     }
     
 }
 @media screen and (min-width:1440px) {
     .hero-img{
-        background-image: url('./Banner\ \(2\).png');
+       height: 374px;
         width: 1440px;
         border-radius: 0 0 50px 50px;
     }
-    
+    .text  h1,.text p{
+
+        font-size: 64px;
+        font-weight: 800;
+        
+    }
 }

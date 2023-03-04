@@ -1,6 +1,7 @@
 import './Header.css'
 import './MenuIcon.css'
 import logo from './logo.png'
+import { Link } from 'react-router-dom';
 
 const Header = (props) => {
     const openMenu = (event) => {
@@ -33,19 +34,18 @@ const Header = (props) => {
                         </div>
                     </div>
                     <nav className='desabled'>
-                    <ul className="lista__lista ">
-                        {props.itens.map((item,index)=><a key={index} href={props.href[index]}><li key={index}>{item}</li></a>)}
-                    </ul>
+                        <ul className="lista__lista ">
+                            {props.itens.map((item, index) => <Link to={`/${item}`} key={index}><li key={index}>{item}</li></Link>)}
+                        </ul>
                     </nav>
                 </div>
-
-
             </div>
             
+            <Link to={'/'}>
                 <div className='logo'>
                     <img className='alt' alt='icone logo'></img>
                 </div>
-
+            </Link>
         </section >
     )
 };

@@ -5,13 +5,12 @@
     padding-top: 48px;
     gap: 8px;
     font-size: 20px;
-    color: var(--cinza);
+   
 }
 
 .footer .img {
     color: transparent;
-    background-image: url('./img/banner.png');
-    background-size: 100%;
+    background-size: 150%;
     width: 100VW;
     height: 338px;
     background-position: center;
@@ -48,8 +47,8 @@
     }
 
     .footer .img {
-        background-image: url('./img/bannerT.png');
-
+        background-position: center;
+        background-size: 100%;
     }
 
     .footer .container div {
@@ -66,7 +65,9 @@
 
 @media screen and (min-width:1440px) {
     .footer .img {
-        background-image: url('./img/bannerD.png');
+        max-width: 100%;
+        background-size: 100%;
+      
     }
     .footer {
         flex-flow: row wrap;
