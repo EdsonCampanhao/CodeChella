@@ -40,7 +40,7 @@ const Home=()=>{
         showTerceario={['Linkin Promises', 'Fullstack Fighters', 'Papa React', 'Angular in Chains']}
         showQuartenario={['Agnostic Front-end', 'SlipkNode', 'Pink Flutter', 'Kiss']}
       />
-      <SectionListOfAtraction
+      <SectionListOfAtraction 
         data='DOMINGO <12/03>'
         showPrincipal='Lana Del Ploy'
         showSecundario={['Dua Lib','The Backnd','CSS Styles','ArrayAna Grande','DJ Query']}
