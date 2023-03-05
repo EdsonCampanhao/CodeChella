@@ -30,23 +30,26 @@ const Map = () => {
                 imgMap={imgMap}
                 imgLegend={imgLegend}
             />
-            <Article
-                titleOfSection='Mais detalhes sobre os setores:'
-                img={img1}
-                title='Pista'
-                text='Pista convencional, atendida pelos bares e banheiros das laterais do estádio. 
+
+            <h2 title="moredetails">Mais detalhes sobre os setores:</h2>
+
+            <div className="articlesOfmapPage">
+                <Article
+                    img={img1}
+                    title='Pista'
+                    text='Pista convencional, atendida pelos bares e banheiros das laterais do estádio. 
         Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.'
-            />
-             <Article
-                img={img2}
-                title='Pista Premiun'
-                text='Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.'    />
-             <Article
-               
-                img={img3}
-                title='Cadeiras'
-                text='Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.'
-            />
+                />
+                <Article
+                    img={img2}
+                    title='Pista Premiun'
+                    text='Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.' />
+                <Article
+
+                    img={img3}
+                    title='Cadeiras'
+                    text='Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.'
+                /></div>
         </section>
 
     )

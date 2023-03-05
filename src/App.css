@@ -22,5 +22,11 @@
 }
 html{
   background-image: var(--gradiente);
+
 }
 
+@media screen and (min-width:1440px) {
+.articlesOfmapPage{
+display: flex;
+}
+}
