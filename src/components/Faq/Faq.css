@@ -1,0 +1,85 @@
+.invert {
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+
+.faq__resposta.desabled {
+    display: none;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.faq__title {
+    width: 50%;
+    text-align: center;
+    padding: 48px 0 84px;
+    font-family: var(--calistoga);
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.faq__cards {
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.faq__info {
+    background-color: var(--azul);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.faq__titulo {
+    font-size: 16px;
+    font-weight: 700;
+    width: 80%;
+    padding: 16px 0 16px 16px;
+}
+
+.faq__icone {
+     fill: white;
+    color: aliceblue;
+    padding-right: 8px;
+    transition: 0.5s;
+}
+
+.faq h3 {
+    color: white;
+}
+
+.faq p {
+    background-color: var(--azul-claro);
+    padding: 8px;
+}
+@media screen and (min-width:700px) {
+    .faq__titulo {
+        font-size: 32px;
+    }
+    .faq p{
+        font-size: 20px;
+    }
+    .faq__cards {
+        width: 648px;
+    }
+    .faq__title {
+        font-style: 48px;
+    }
+
+    
+}
+@media screen and (min-width:1440px) {
+    .faq__cards {
+        width:996px;
+    }
+}

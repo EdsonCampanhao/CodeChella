@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 48px;
+    padding-bottom: 120px;
     gap: 8px;
     font-size: 20px;
    
@@ -40,6 +41,9 @@
 }
 
 @media screen and (min-width:700px) {
+    .footer{
+        padding-bottom: 32px;
+    }
 
     .footer div {
         flex-direction: row;
@@ -72,7 +76,7 @@
     .footer {
         flex-flow: row wrap;
         justify-content: space-around;
-        padding-bottom: 68px;
+        padding-bottom: 120px;
     }
 
 }
