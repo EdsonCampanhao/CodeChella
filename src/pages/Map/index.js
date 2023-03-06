@@ -1,4 +1,7 @@
+import './Map.css'
+
 import Header from "../../components/Header";
+
 
 import HeroSection from "../../components/HeroSection";
 import bannerMap from '../../components/HeroSection/img/bannerMap.jpg'
@@ -11,6 +14,7 @@ import Article from "../../components/Article/index.js";
 import img1 from "../../components/Article/img/im1.png";
 import img2 from "../../components/Article/img/im2.png";
 import img3 from "../../components/Article/img/im3.png";
+import Footer from '../../components/Footer/';
 
 
 
@@ -31,7 +35,7 @@ const Map = () => {
                 imgLegend={imgLegend}
             />
 
-            <h2 title="moredetails">Mais detalhes sobre os setores:</h2>
+            <h2 className="moreDetails">Mais detalhes sobre os setores:</h2>
 
             <div className="articlesOfmapPage">
                 <Article
@@ -50,6 +54,9 @@ const Map = () => {
                     title='Cadeiras'
                     text='Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada em relação às pistas.'
                 /></div>
+
+                <Footer
+                />
         </section>
 
     )
