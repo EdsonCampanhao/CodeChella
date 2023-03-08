@@ -1,10 +1,24 @@
 import'./Button.css'
 import {AiOutlineArrowRight} from 'react-icons/ai'
-import { blueGrey } from '@mui/material/colors'
+
+const changeOption=(e)=>{
+
+    console.log(e)
+    e.props.change(e.target.value)
+
+}
+
+
 
 const Button=(props)=>{
     return(
-        <button className='botao' type={props.type}> {props.children} <AiOutlineArrowRight size={32} className='icon'/> </button>
+        <button className='botao' 
+        value={props.valor} 
+        onChange={(e)=>{props.change(e.target.textContent)
+        console.log(e)
+        }} 
+        type={props.type}> {props.children} <AiOutlineArrowRight size={32} className='icon'/> 
+        </button>
     )
 }
 

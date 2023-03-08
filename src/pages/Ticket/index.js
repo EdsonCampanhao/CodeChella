@@ -18,7 +18,7 @@ const Ticket = () => {
             title='Garanta seu Ingresso'
             />
             <Form 
-             options={['meia-entrada','inteira','ingresso artista']}
+             options={['','meia-entrada','inteira','ingresso artista']}
              />
              <Footer/>
 

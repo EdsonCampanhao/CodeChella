@@ -3,6 +3,7 @@ import TextField from './TextField'
 import { useState } from 'react'
 import Button from './Button'
 import ListOfOptions from './ListOfOptions'
+import Ticket from '../../pages/Ticket'
 
 
 
@@ -11,16 +12,22 @@ const Form = (props) => {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [dataDeNascimento, setdataDeNascimento] = useState('');
+    const [typeOfTicket,setTypeOfTicket] = useState('');
 
 
     const aoSalvar = (evento) => {
+        
+        evento.preventDefault()
 
         console.log(props)
 
         let orçamento = {
             nome: nome,
             email: email,
+
             dataDeNascimento: dataDeNascimento,
+
+            typeOfTicket: typeOfTicket,
         }
 
         console.log(orçamento)
@@ -50,12 +57,15 @@ const Form = (props) => {
                 <div className='container'>
                 <ListOfOptions
                     options={props.options}
+                    valor={typeOfTicket}
+                    change={valor=>setTypeOfTicket(valor)}
                 />
                 <TextField
                     type="date"
                     name="date"
                     label='Data de nascimento'
                     placeholder=''
+                    obrigatorio={true}
                     valor={dataDeNascimento}
                     aoAlterado={valor => setdataDeNascimento(valor)}
                 />
@@ -63,7 +73,9 @@ const Form = (props) => {
 
 
 
-                <Button type='submit'>Avançar!</Button>
+                <Button 
+                type='submit' 
+                >Avançar!</Button>
             </form>
         </section>
     )
