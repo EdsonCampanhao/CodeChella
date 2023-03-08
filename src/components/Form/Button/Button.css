@@ -1,0 +1,31 @@
+.botao {
+    width: 164px;
+    height: 56px;
+    margin:  auto;
+    background-color: var(--azul);
+    border-radius: 10px;
+    color: aliceblue;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    fill: aliceblue;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.botao .icon {
+    fill: #ffffff;
+}
+.botao:hover {
+    transform: scale(1.3);
+}
+@media screen and (min-width:1040px) {
+    .Botao {
+        width: 200px;
+        padding: 24px;
+
+    }
+}
