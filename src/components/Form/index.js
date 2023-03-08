@@ -3,11 +3,13 @@ import TextField from './TextField'
 import { useState } from 'react'
 import Button from './Button'
 import ListOfOptions from './ListOfOptions'
-import Ticket from '../../pages/Ticket'
-
-
+import {  useNavigate } from 'react-router-dom'
 
 const Form = (props) => {
+
+    const navigate=useNavigate();
+
+
 
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
@@ -17,11 +19,10 @@ const Form = (props) => {
 
     const aoSalvar = (evento) => {
         
-        evento.preventDefault()
 
         console.log(props)
 
-        let orçamento = {
+        let data = {
             nome: nome,
             email: email,
 
@@ -30,10 +31,16 @@ const Form = (props) => {
             typeOfTicket: typeOfTicket,
         }
 
-        console.log(orçamento)
+
+      console.log(props.data)
+
+     
+
+        navigate('/ingressocomprado')
     }
     return (
-        <section className='formulario'>
+    
+        <section className='formulario' method="post"  action="/ingressocomprado">
             <form onSubmit={aoSalvar} >
                 <h2>Preencha o formulário a seguir:</h2>
                 <TextField
