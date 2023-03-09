@@ -4,9 +4,10 @@ import Header from '../../components/Header'
 import HeroSection from '../../components/HeroSection';
 import ticketBanner from '../../components/HeroSection/img/ticketBanner.jpg'
 
+
 import Footer from '../../components/Footer'
 
-const Ticket = () => {
+const Ticket = (props) => {
     return (
         <section>
 

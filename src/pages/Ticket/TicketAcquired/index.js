@@ -1,25 +1,48 @@
+import { Component } from "react";
 import Header from "../../../components/Header";
+
 import HeroSection from "../../../components/HeroSection";
+import banner from '../../../components/HeroSection/img/ticketBannerII.jpg'
 
-const TicketAcquired = () => {
-    return (
+import Footer from '../../../components/Footer'
 
-        <section>
-            <Header
+import TicketQr from "../../../components/Ticket";
+
+
+
+const TicketAcquired = (props) => {
+
+  
+  
+
+  return (
+
+    
+
+    <section>
+      <Header
         itens={['A experiência', 'Mapa de Setores', 'Informações', 'Ingresso']}
       />
       <HeroSection
-        
-        title={'Boas-vindas ao'}
-        text={'#CodeChella2023!'}
+        img={banner}
+        title={'Seu ingresso está aqui!'}
       />
+      <h2>
+        Uhul, agora sim!
+        Seu ingresso está aqui, apresente na entrada do evento e divirta-se!
+      </h2>
+
+    <TicketQr
+    />
+
+    <Footer
+   
+    />
+    </section>
 
 
-        </section>
 
 
-
-
-    )
+  )
 }
 export default TicketAcquired;

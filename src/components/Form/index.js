@@ -3,7 +3,7 @@ import TextField from './TextField'
 import { useState } from 'react'
 import Button from './Button'
 import ListOfOptions from './ListOfOptions'
-import {  useNavigate } from 'react-router-dom'
+import {  useNavigate, useParams } from 'react-router-dom'
 
 const Form = (props) => {
 
@@ -19,7 +19,6 @@ const Form = (props) => {
 
     const aoSalvar = (evento) => {
         
-
         console.log(props)
 
         let data = {
@@ -31,12 +30,9 @@ const Form = (props) => {
             typeOfTicket: typeOfTicket,
         }
 
+        localStorage.setItem('infoClient',JSON.stringify(data))
 
-      console.log(props.data)
-
-     
-
-        navigate('/ingressocomprado')
+        navigate(`/ingressocomprado/${data.nome}/${data.email}`)
     }
     return (
     
