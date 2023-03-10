@@ -1,0 +1,74 @@
+.ticket{
+    background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    width:312px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    margin: 32px auto 64px;
+}
+.ticket .logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.element1{
+    width: 117px;
+    height: 32px;
+}
+.element2{
+    width: 32px;
+    height: 32px;
+}
+.qrCode{
+    width: 248px;
+    height: 190px;
+    margin: 32px 0;
+}
+.ticket h4{
+    font-weight:700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.ticket .infos{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media screen and (min-width:700px) {
+    .ticket{
+        width: 650px;
+    }
+    .qrCode{
+        width:350px;
+        background-repeat: no-repeat;
+        background-size: 85%;
+        background-position:center;
+
+    }
+    
+}
+@media screen and (min-width:1440px) {
+
+    .ticket{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 800px;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .qrCode{
+        margin:32px 48px 0 0;
+        width:190px;
+        background-size: 150%;
+    }
+    .infos{
+        font-size: 20px;
+        margin-top: 32px;
+    }
+
+    
+}

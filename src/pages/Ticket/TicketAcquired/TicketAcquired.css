@@ -1,0 +1,13 @@
+.congrulation{
+    padding: 64px 24px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+@media screen and (min-width:700px) {
+    .congrulation{width: 690px;}
+}
+@media screen and (min-width:1440px) {
+    .congrulation{width: 790px; }
+}

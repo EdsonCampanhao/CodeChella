@@ -1,3 +1,5 @@
+
+
 import  Form  from '../../components/Form';
 import Header from '../../components/Header'
 
@@ -19,7 +21,7 @@ const Ticket = (props) => {
             title='Garanta seu Ingresso'
             />
             <Form 
-             options={['','meia-entrada','inteira','ingresso artista']}
+             options={['','Pista Premium','Pista comum','Cadeiras térreo','Cadeiras Superiores']}
              />
              <Footer/>
 

@@ -26,7 +26,7 @@ function App() {
 
         />} />
         <Route path='/ingressocomprado' element={<TicketAcquired/>} />
-        <Route path='/ingressocomprado/:id/:di' element={<TicketAcquired/>} />
+        <Route path='/ingressocomprado/:name/:seat' element={<TicketAcquired/>} />
 
       </Routes>
     </Router>

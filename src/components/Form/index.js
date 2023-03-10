@@ -32,7 +32,7 @@ const Form = (props) => {
 
         localStorage.setItem('infoClient',JSON.stringify(data))
 
-        navigate(`/ingressocomprado/${data.nome}/${data.email}`)
+        navigate(`/ingressocomprado/${data.nome}/${data.typeOfTicket}`)
     }
     return (
     

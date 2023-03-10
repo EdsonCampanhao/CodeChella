@@ -1,4 +1,5 @@
-import { Component } from "react";
+import './TicketAcquired.css'
+
 import Header from "../../../components/Header";
 
 import HeroSection from "../../../components/HeroSection";
@@ -27,7 +28,7 @@ const TicketAcquired = (props) => {
         img={banner}
         title={'Seu ingresso está aqui!'}
       />
-      <h2>
+      <h2 className='congrulation'>
         Uhul, agora sim!
         Seu ingresso está aqui, apresente na entrada do evento e divirta-se!
       </h2>

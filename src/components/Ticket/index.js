@@ -1,50 +1,35 @@
 import './Ticket.css'
 import logo from './img/logo.png';
+import tagImg from './img/closertag.png'
 import qrCode from './img/qr-code.png';
-import { useState } from 'react';
-import { useParams } from 'react-router-dom';
 
+import { useParams } from 'react-router-dom';
 
 
 
 const TicketQr = (props) => {
 
-
-    const [name, setName] = useState('')
-    const [sector, setSector] = useState('')
-
-    function changeDatas(name,sector){
-
-    
-
-    }
-
- const loadData = (name,sector) => {
-    
-    setName(name);
-    setSector(sector);
-
-   
-    }
-
-    const {id,di}= useParams();
+    const { name, seat } = useParams();
 
     return (
 
         <section className='ticket'>
 
+            <div className='logo'>
+                <div className='element1' style={{backgroundImage:`url(${logo})`}} ></div>
+                <div className='element2' style={{backgroundImage:`url(${tagImg})`}}></div>
+            </div>
 
-            <img src={logo} alt='logo'></img>
-            <img src={qrCode} alt='Código qr' ></img>
+            <div className='qrCode' style={{backgroundImage:`url(${qrCode})`}}>  </div>
 
-            <h4>{name}</h4>
+           
 
-            <div className='infos'>
-                <p>{di}</p>
-                <p>{`Setor: ${id}`}</p>
+            <div className='infos'> 
+            <h4>{name.toUpperCase()}</h4>
+                <p>Ingresso Cortesia</p>
+                <p>{`Setor: ${seat}`}</p>
                 <p>Data: 11/03</p>
                 <p>Local: São Paulo-sp</p>
-
             </div>
 
         </section>
